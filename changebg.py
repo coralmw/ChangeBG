@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import PIL.Image as Image
 from gi.repository import Gio, GLib
 import sys
