@@ -20,5 +20,6 @@ out.paste(r, (singlewidth, 0, singlewidth*2, height))
 BGsettings = Gio.Settings.new(SCHEMA)
 
 out.save(FPATH)
+print('Saved joined image to {}'.format(FPATH))
 BGsettings.set_value('picture-uri', GLib.Variant.new_string(FPATH))
 BGsettings.set_value('picture-options', GLib.Variant.new_string('spanned'))
